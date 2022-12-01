@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turfe</title>
+    <link rel="icon" href="assets/logo 2.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/wonder-boy-in-monster-world"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="banner">
+      <div class="container">
+        <div class="jogar1" id="jogar1">
+          <div class="content" id="cont1">
+            <img src="assets/Cavalo 1.gif" width="300px" />
+            <button onclick="jogar()">Jogar</button>
+          </div>
+        </div>
+        <div class="jogar2" id="jogar2" style="display: none">
+          <div id="loding" style="display: none">
+            <img src="assets/Cavalo loading.gif" width="200px" />
+          </div>
+          <div class="content" id="cont2" style="display: none">
+            <h3>Cadastro - Cavalo</h3>
+            <label for="ipt_num">Quantidade de cavalos:</label>
+            <input type="number" id="ipt_num" max="7" placeholder="2 a 7"/>
+            <button onclick="registrar()">Registrar</button>
+          </div>
+          <div class="content" id="cont3" style="display: none">
+            <h3>Cadastro - Cavalo</h3>
+            <label for="ipt_nome">Nome do <b id="num_cav">1</b>º cavalo:</label>
+            <input type="text" id="ipt_nome" />
+            <button onclick="registrar()">Registrar</button>
+          </div>
+          <div class="content" id="cont4" style="display: none">
+            <h3>Cadastro - Cavalo</h3>
+            <label for="ipt_volta">Quantidades de voltas:</label>
+            <input type="number" id="ipt_volta" />
+            <button onclick="registrar2()">Registrar</button>
+          </div>
+          <div class="content" id="resultado" style="display: none">
+            <h1>Podio</h1>
+            <div id="msg">1º ------ : ---- <br> 2º ------ : ---- <br> 3º ------ : ----</div>
+            <button id="btn_correr" onclick="correr()">Correr volta</button>
+          </div>
+        </div>
+        <div class="voltass" id="volta">
+          <div id="voltas"></div>
+        </div>
+        <div class="cavalos" id="cavalo" style="display: none">
+          <h1>Cavalos cadastrados</h1>
+          <div id="cavalos"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="main.js"></script>

@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: black;
+  font-family: "Wonder Boy In Monster World", sans-serif;
+}
+body {
+  height: auto;
+}
+.banner {
+  display: flex;
+  background-image: url(assets/celeirobackground.png);
+  background-size: cover;
+  height: 746px;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  height: auto;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 3px solid black; */
+}
+.jogar1 {
+  display: flex;
+  width: 600px;
+  height: 300px;
+  background-image: url(assets/pergaminhoFechado.png);
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.jogar1:hover {
+  display: flex;
+  width: 550px;
+  height: 570px;
+  background-image: url(assets/PergaminhoAberto.png);
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  z-index: 1;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+.content {
+  transform: translateY(100px);
+  opacity: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+.jogar1:hover .content {
+  transform: translateY(o);
+  opacity: 1;
+  transition: 0.5s;
+}
+
+button {
+  border: 3px solid black;
+  width: 200px;
+  height: 70px;
+  border-radius: 40px;
+  font-size: 30pt;
+  font-weight: 800;
+  background-color: #b2414e;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #c7293b;
+}
+.jogar2 {
+  display: flex;
+  width: 550px;
+  height: 570px;
+  background-image: url(assets/PergaminhoAberto.png);
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  z-index: 1;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+.jogar2 .content {
+  transform: translateY(o);
+  opacity: 1;
+}
+.jogar2 .content h3 {
+  margin-bottom: 70px;
+}
+input {
+  border: #f2eda0a3;
+  border-bottom: solid 2px #f2c36b;
+  padding: 10px;
+  font-size: 0.9rem;
+  margin-bottom: 40px;
+  color: #000;
+  background-color: #f2eda0c6;
+  border-radius: 4px;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+.content input:focus {
+  border-color: #c7293b;
+}
+.jogar2 .content button {
+  font-size: 19pt;
+}
+b {
+  margin-left: 15px;
+}
+.cavalos {
+  flex-direction: column;
+  background-color: #f2c36b;
+  padding: 20px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.38);
+}
+.voltass {
+  flex-direction: column;
+  background-color: #f2c36b;
+  padding: 0px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.38);
+}
+.cavalo h1 {
+  margin-bottom: 50px;
+}
+#resultado h1 {
+  margin-bottom: 40px;
+}
+#msg{
+  margin-bottom: 50px;
+}
